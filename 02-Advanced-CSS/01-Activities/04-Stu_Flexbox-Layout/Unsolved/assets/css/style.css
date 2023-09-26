@@ -10,6 +10,7 @@ body {
 main {
   display: flex;
   margin-top: 2%;
+  flex-wrap: wrap;
 }
 
 .main-header {
@@ -18,6 +19,7 @@ main {
   padding: 60px;
   background: #13293d;
   color: #fff;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -38,4 +40,10 @@ main {
   width: 100%;
   /* The client insists that images be at least 400px */
   min-width: 400px;
+}
+
+@media screen and (max-width: 650px) {
+  .main-header { 
+    justify-content: center;
+  }
 }

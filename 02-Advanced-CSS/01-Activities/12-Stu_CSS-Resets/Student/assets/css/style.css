@@ -34,10 +34,6 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
-  color: #fff;
-}
-
 main {
   display: flex;
   flex: 1 1 0;
@@ -85,25 +81,6 @@ footer {
   padding: 2%;
   background-color: #13293d;
   color: #fff;
-}
-
-/* TODO: Add styles that will hide the resource links by default */
-.resources ul {
-  transition: all 2s linear;
-  /* display:none; */
-  /* visibility: hidden; */
-  /* opacity: 0; */
-  height: 1px;
-  overflow: hidden;
-
-
-/* TODO: Add styles that will display the links when the mouse hovers over the parent element */
-
-.resources:hover ul {
-  /* display:block; */
-  /* visibility: visible; */
-  /* opacity: 1; */
-  height: 100px;
 }
 
 @media screen and (max-width: 768px) {

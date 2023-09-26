@@ -20,6 +20,7 @@ header {
 
 nav {
   display: flex;
+  justify-content: flex-end;
   background-color: #d8a47f;
 }
 
@@ -47,9 +48,11 @@ footer {
 .product button {
   font-size: 150%;
 }
-
+/* it's this class and not .product button because .product button affects the buy now button as well.
+also the contents of the button will be affected not the button itself */
 .product-slideshow {
   display: flex;
+  align-items: center;
 }
 
 .product-image {
