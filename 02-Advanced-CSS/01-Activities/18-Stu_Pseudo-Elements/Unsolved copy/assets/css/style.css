@@ -62,6 +62,7 @@ article p {
 /* TODO: Style the term/phrase - underline, black text, grab cursor */
 .css-tooltip {
   text-decoration: underline;
+  color: black;
   /* border: 3px solid red; */
   padding: 10px;
   display: inline-block;
