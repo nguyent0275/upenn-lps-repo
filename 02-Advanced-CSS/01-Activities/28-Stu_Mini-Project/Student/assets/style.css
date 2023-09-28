@@ -1,0 +1,93 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #33393f;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#purple-color-text {
+    color: purple;
+}
+
+.text-align-center {
+    text-align: center;
+    color: white;
+}
+
+div p {
+    color: purple;
+}
+
+.card-box-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin-left: -1.5rem;
+    margin-right: -1.5rem */
+}
+
+.card-column {
+    width: 29%;
+    border: 3px dashed greenyellow;
+}
+
+.card-box {
+    display: flex;
+}
+
+.card-box-title {
+    font-size: 150%;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10%;
+    position: relative;
+    top: -36px;
+    background-color: #33393f;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: purple;
+}
+
+.code-block {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    border: 1px solid white;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    header {
+      width: 75%;
+    }
+  
+    .card-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
+  }
+  
