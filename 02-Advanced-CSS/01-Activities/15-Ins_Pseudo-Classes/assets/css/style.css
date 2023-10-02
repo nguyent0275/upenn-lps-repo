@@ -30,3 +30,7 @@ button:focus {
   outline: none;
   border-color: #8ac4ff;
 }
+
+button:nth-child(odd){
+  background: teal;
+}

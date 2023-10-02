@@ -45,8 +45,12 @@ h3::before {
 
 /* Added symbols before and after the nav links */
 nav li::before,
-nav li::after {
-  content: '\2766';
+nav li::after{
+  /* content: '\2766'; */
+  /* content: '\2705'; */
+  content: "A";
+  /* border: 1px white solid; */
+  /* display: inline-block; */
   color: #8ac4ff;
   padding: 1%;
   font-family: cursive;

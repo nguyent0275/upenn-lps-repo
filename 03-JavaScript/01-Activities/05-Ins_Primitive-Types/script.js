@@ -3,7 +3,7 @@
 var myUndefined;
 
 // A string is a series of characters and is surrounded by quotes 
-var myStringWelcome = "Hello World"; 
+var myStringWelcome = 'Hello World'; 
 var myStringPassword = "865Password!2020";
 
 // A number can be either an integer or a decimal  
