@@ -82,6 +82,11 @@ article div > * {
   border: 4px solid #b9c6ae;
 }
 
+/*article :nth-child(1) a:first-of-type,*/
+article li:first-child > a{
+  border: red 3px solid;
+}
+
 footer {
   display: flex;
   justify-content: center;

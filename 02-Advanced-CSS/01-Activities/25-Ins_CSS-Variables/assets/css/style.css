@@ -1,9 +1,12 @@
 /* create custom CSS variables (also called custom properties) and apply them to the root of the page, making them accessible to all other CSS */
 :root {
   /* declare a variable with `--` syntax */
-  --dark: #13293d;
-  --light: #fff;
-  --navlink-color: #b9c6ae;
+  /* --dark: #13293d; */
+  --dark: aquamarine;
+  --light: black;
+  --navlink-color: purple;
+  --big-box-size: 800px;
+  --transit-type: 1s linear all;
 }
 
 body {

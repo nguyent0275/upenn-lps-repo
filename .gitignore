@@ -1,0 +1,20 @@
+/0*
+/1*
+/2*
+Solved
+Main
+!/01*
+!/02*
+!/03*
+!/04*
+ignore
+student
+students
+node_modules
+build
+*.env
+.notes.md
+# ignore for windows
+Thumbs.db
+# ignore for mac
+.DS_Store
