@@ -1,4 +1,4 @@
-var hungerLevel = 50;
+var hungerLevel = 3;
 var isLunchTime = true;
 var lunchBill = 11;
 
@@ -38,11 +38,13 @@ if (!isLunchTime) {
 
 // Else if allows you to test more than one condition
 // The first condition is false, so the second condition is evaluated. Logs "Cost Rating: $$""
-
+// lunchBill = 50;
 if (lunchBill < 10) {
   console.log("Cost Rating: $");
 } else if (lunchBill >= 10 && lunchBill < 15) {
   console.log("Cost Rating: $$");
-} else {
+} else if (lunchBill >= 15 && lunchBill < 20) {
   console.log("Cost Rating: $$$");
+} else {
+  console.log("Cost Rating: $$$$");
 }

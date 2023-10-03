@@ -1,3 +1,6 @@
+declareHello(); // hoisted without error
+// expressHello(); // not hoist, has an error
+
 // Functions are reusable blocks of code that perform a specific task
 // This is a function declaration 
 function declareHello() { 
@@ -6,6 +9,7 @@ function declareHello() {
   // Return stops the execution of a function
   return;
 }
+
 
 // This is a function expression
 var expressHello = function() { 
@@ -20,6 +24,7 @@ expressHello();
 
 //Functions can be called again to make the block of code execute again
 declareHello(); 
+expressHello();
 
 // Functions can take parameters.
 // Parameters give a name to the data to be passed into the function
