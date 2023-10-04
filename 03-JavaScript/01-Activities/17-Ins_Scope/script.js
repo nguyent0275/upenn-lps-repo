@@ -40,9 +40,13 @@ function sayWhat() {
 //Logs "Goodbye"
 var sayWhatAgain = function () {
   var shadow = "Goodbye";
-  console.log(shadow);   
+  var ninja = "1";
+  console.log(shadow);  
+  console.log(ninja.length); 
+  return ninja;
 };
 
 sayGoodbye();
 sayWhat();
-sayWhatAgain();
+var ninjaEscaped = sayWhatAgain();
+console.log(ninjaEscaped);
