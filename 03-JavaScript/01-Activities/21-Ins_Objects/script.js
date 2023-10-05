@@ -5,7 +5,10 @@ var planet = {
   age: "4.543 billion years",
   moons: 1,
   isPopulated: true,
-  population: "7.594 billion"
+  population: "7.594 billion",
+  biggestOcean: {
+    name: "Pacific"
+  }
 };
 
 // To access a property's value that is a string, number or boolean, use the object's name and the associated key	
@@ -14,3 +17,7 @@ console.log(planet.name);
 	
 // Uses bracket notation and logs "Earth"
 console.log(planet["name"]);
+
+planet.hasOwnProperty("moons")
+planet["moons"] = 0
+console.log(Object.entries(planet));
