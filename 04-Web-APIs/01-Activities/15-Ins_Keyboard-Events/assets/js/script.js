@@ -1,9 +1,16 @@
+// selecing the typeface selectio bar in html line 15
 var typefaceEl = document.querySelector('#typeface');
+// selecting the clear button in html line 26
 var clearEl = document.querySelector('#clear');
+// selecting the <h1> tag in html line 31
 var h1El = document.querySelector('#h1');
+// selecting the <h2> tag in html line 32
 var h2El = document.querySelector('#h2');
+// selecting the <h3> tag in html line 33
 var h3El = document.querySelector('#h3');
+// selecting the <p> tag in html line 34
 var pEl = document.querySelector('#p');
+// selecting the <textarea> in html line 24
 var textAreaEl = document.querySelector('#textarea');
 
 var elements = [h1El, h2El, h3El, pEl];
