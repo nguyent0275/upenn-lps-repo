@@ -12,15 +12,25 @@
 // Sets changeP to have multiple style attributes
  changeP.setAttribute("style", "font-size: 25px; font-weight: bold; text-decoration:underline; ");
 
+changeP.setAttribute("id", "opal-told-me-to-do-this");
+// #change2 no longer works after this point
+changeP.setAttribute("data-aaron","Yes it will change");
  // Sets image source of the first image
+//  if(window.innerWidth < 768){
  imgEl[0].setAttribute("src", "./assets/images/image_1.png");
 
 // Adds size and width styling to image
  imgEl[0].setAttribute("style", "width:50%");
+//  }
 
-// Loops through divTags to set each one to have the color blue and the font size of 30px
+// // Loops through divTags to set each one to have the color blue and the font size of 30px
 for (var i = 0; i < divTags.length; i++) {
   divTags[i].setAttribute("style", "color:blue; font-size: 30px");
  }
 
- 
+ for(var i = 0; i < divTags.length; i++){
+  console.log(divTags[i]);
+}
+ for(var i = 0; i < divTags.length; i++){
+  divTags[i].setAttribute("style","font-size: 50px; color: red");
+}
