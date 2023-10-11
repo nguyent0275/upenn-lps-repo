@@ -1,4 +1,5 @@
 // Access toggle switch HTML element
+// select node
 var themeSwitcher = document.querySelector("#theme-switcher");
 var container = document.querySelector(".container");
 
@@ -6,6 +7,7 @@ var container = document.querySelector(".container");
 var mode = "dark";
 
 // Listen for a click event on toggle switch
+             //addEventListener          // function
 themeSwitcher.addEventListener("click", function() {
   // If mode is dark, apply light background
   if (mode === "dark") {
