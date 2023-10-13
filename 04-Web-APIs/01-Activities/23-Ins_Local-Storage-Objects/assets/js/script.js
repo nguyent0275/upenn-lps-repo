@@ -4,7 +4,7 @@ var comment = document.getElementById("msg");
 var saveButton = document.getElementById("save");
 
 saveButton.addEventListener("click", function(event) {
-event.preventDefault();
+event.preventDefault(); // prevent refreshing the page so our javascript will run
 
 var studentGrade = {
   student: student.value,
