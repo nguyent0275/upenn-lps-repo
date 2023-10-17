@@ -13,7 +13,7 @@ imageContainer.addEventListener("click", function(event) {
       // Change the data-state attribute's value
       // There are two different ways this attribute can be set
       element.dataset.state = "animate";
-      element.setAttribute("data-state", "animate");
+      element.setAttribute("data-state", "animate"); // duplicate
 
       // Update the image's source to the string being stored in the data-animate attribute
       element.setAttribute("src", element.dataset.animate);
@@ -22,5 +22,10 @@ imageContainer.addEventListener("click", function(event) {
       element.dataset.state = "still";
       element.setAttribute("src", element.dataset.still);
     }
+  }
+  // if we clicked on h1
+  if (element.matches("h1")){
+    // append blob to h1
+    element.textContent = element.textContent + " Blob";
   }
 });

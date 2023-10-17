@@ -5,9 +5,14 @@ var saveButton = document.getElementById("save");
 var gradeReport = document.querySelector(".message")
 
 saveButton.addEventListener("click", function(event) {
+<<<<<<< HEAD
   // stops the data inputs from being cleared 
 event.preventDefault();
 // storing the variables and their input values into the studentGrade object. 
+=======
+event.preventDefault(); // prevent refreshing the page so our javascript will run
+
+>>>>>>> cc4655f9e044443f64fc07134fb423de8f0b8070
 var studentGrade = {
   student: student.value,
   grade: grade.value,
