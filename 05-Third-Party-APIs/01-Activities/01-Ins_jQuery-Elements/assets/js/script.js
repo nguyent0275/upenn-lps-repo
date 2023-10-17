@@ -3,14 +3,18 @@
 // var rootEl = document.getElementById("root");
 var rootEl = $('#root');
 
+// console.log(rootEl.get(0)); // see the first element selected
+
 // var titleEl = document.createElement("h1");
-var titleEl = $('<h1>');
+var titleEl = $('<h1>'); // create an <h1> tag
+// var titleEl = $('h1'); // selecting an h1 tag that exists
 
 // titleEl.textContent = "Hello friends";
 titleEl.text('Hello friends');
 
 // titleEl.className = 'fancy';
 titleEl.attr('class', 'fancy');
+// titleEl.addClass("fancy");
 
 // titleEl.classList.add('p-5') - (`p-5` is for padding)
 titleEl.addClass('p-5');
@@ -22,7 +26,9 @@ titleEl.css('border', 'rgb(122, 242, 242) 5px solid');
 rootEl.append(titleEl);
 
 // titleEl.append("Welcome to jQuery");
-rootEl.append('<h2>With jQuery we can:</h2>');
+// rootEl.append('<h2>With jQuery we can:</h2>');
+// // preferred way of appending elements as one line
+rootEl.append($("<h2>").text("With jQuery we can:"));
 
 var abilities = [
   'Select',
@@ -54,8 +60,11 @@ for (var i = 0; i < abilities.length; i++) {
 // select all `<li>` elements on the page
 // document.querySelectorAll('li');
 console.log($('li'));
+console.log($('li').get(1).outerHTML);
 
-// Alternatively use the `$.each` method
-// $.each(abilities, function(i, ability) {
-//    rootEl.append("<li>" + ability + "</li>");
-// })
+// Alternatively use the `$.each` method // another type of loop
+// abilities is an array or collection
+// ability is a single element of that collection/array
+$.each(abilities, function(i, ability) {
+   rootEl.append("<li>" + ability + "</li>");
+})
