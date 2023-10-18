@@ -64,6 +64,17 @@ buttonListEl.on('click', '.letter-button', function (event) {
   displayEl.append(displayLetterEl);
 });
 
+// // Delegate event listener to the parent element, <div id="buttons">
+// $('.letter-button').on('click', function (event) {
+//   var displayLetterEl = $('<div>');
+
+//   displayLetterEl.addClass('letter');
+
+//   // get letter from clicked letter button's `data-letter` attribute and use it for display
+//   displayLetterEl.text($(event.target).attr('data-letter'));
+//   displayEl.append(displayLetterEl);
+// });
+
 // Renders the letter buttons on click
 showLettersBtnEl.on('click', function () {
   // render letters
