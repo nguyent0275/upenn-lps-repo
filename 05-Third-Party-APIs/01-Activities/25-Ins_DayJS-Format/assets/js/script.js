@@ -1,5 +1,6 @@
 // Use Day.js to format the following variables:
 // 1. What is today's date in the following format: Jan 1st, 1999?
+dayjs.extend(dayjs_plugin_advancedFormat)
 var today = dayjs();
 $('#1a').text(today.format('MMM D, YYYY'));
 
