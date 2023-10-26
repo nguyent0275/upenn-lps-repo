@@ -9,12 +9,15 @@ function getApi() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
-      for (var i = 0; i < data.length; i++) {
+      console.log(data);// array
+      for (var i = 0; i < data.length; i++) { // for-loop
+        // create
         var userName = document.createElement('h3');
         var issueTitle = document.createElement('p');
+        // attr and text
         userName.textContent = data[i].user.login;
         issueTitle.textContent = data[i].title;
+        // append
         issueContainer.append(userName);
         issueContainer.append(issueTitle);
       }
