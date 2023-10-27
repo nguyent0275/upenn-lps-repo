@@ -1,6 +1,7 @@
 var badRequestUrl = 'https://api.github.com/orgs/nodejs/oreps?per_page=5';
 
 var responseText = document.getElementById('response-text');
+// var responseText = $('#response-text');
 
 function getApi(requestUrl) {
   fetch(requestUrl)
@@ -14,7 +15,13 @@ function getApi(requestUrl) {
       // text/attr
       // append
 
-      // text
+      if(response.status != 200){
+        // text
+        responseText.textContent = response.status;
+        // responseText.text(response.status);
+      }
+
+      return response.json();
     })
     .then(function (data) {
       console.log(data);
