@@ -12,7 +12,9 @@
   $( function() {
     // $( "#dialog" ).dialog();
     // $( "#dialog" ).dialog("close"); // display: none
-    $( "#error-button" ).on( "click", function() {
+    $( "#error-button" ).on( "click", function(event) {
+      console.log(event);
+      var city = event.target.dataset.city;
       // $("#dialog").dialog( "open" );
 
       // create
@@ -25,14 +27,14 @@
         title: "Error Box",
         // style: "display: none", // close the box
       });
-      pEl.text("I can't find what you are looking for");
+      pEl.text("I can't find what you are looking for in " + city);
 
       // append
       $(document.body).append(dialogEl);
       dialogEl.append(pEl);
 
       // jquery ui line to open dialog
-      $("#dialog").dialog();
+      $(dialogEl).dialog();
 
     });
   } );
@@ -44,8 +46,8 @@
 <!-- <div id="dialog" title="Error">
   <p>I can't find what you are looking for</p>
 </div> -->
-<button id="error-button">
-  Error
+<button id="error-button" data-city="Portland">
+  Error in Portland
 </button>
  
 </body>
