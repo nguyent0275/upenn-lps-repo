@@ -64,7 +64,7 @@ Make a pull request only when you want the entire group to have this working new
 
 Make pull request, check with your group before merging any big changes. (most of the time, it should be ok)
 Merge the pull the request in github once all merge conflicts are resolved
-Everyone in group should do
+Everyone in group should do `git pull origin main`
 
 ```bash
 
