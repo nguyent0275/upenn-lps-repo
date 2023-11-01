@@ -48,7 +48,7 @@ git push --set-upstream <branch_name>
 
 ## Developer making versions and merges
 
-Make a commit version and push (after this you can do a pull request) (repeat this step until you fix all errors in your branch)
+You want to make commit versions frequently. Make a commit version and push (after this you can do a pull request) (repeat this step until you fix all errors in your branch)
 
 ```bash
 
@@ -59,6 +59,8 @@ git pull origin main
 # if there was a huge "fast-forward", check and see if the website still works and repeat from "git add -A"
 
 ```
+
+Make a pull request only when you want the entire group to have this working new feature.
 
 Make pull request, check with your group before merging any big changes. (most of the time, it should be ok)
 Merge the pull the request in github once all merge conflicts are resolved
