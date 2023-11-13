@@ -1,5 +1,16 @@
 console.log("connected test is good.");
 
+document.querySelector(".navbar-burger").addEventListener ("click", toggleNav);
+function toggleNav() {
+  var nav = document.getElementById("nav-menu");
+  var className = nav.getAttribute("class");
+  if(className == "navbar-menu") {
+      nav.className = "navbar-menu is-active";
+  } else {
+      nav.className = "navbar-menu";
+  }
+}
+
 // find the form on the page
 var cityForm = document.querySelector("#city-form");
 // var cityForm = $('#city-form');
