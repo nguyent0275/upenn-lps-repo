@@ -31,3 +31,13 @@ function handleFormSubmit(event) {
 
 // Submit event on the form
 formEl.on('submit', handleFormSubmit);
+
+
+// $.each($('input:checked'), function(){
+//   console.log($(this).val())
+// });
+
+// for(var i = 0; i < $('input:checked').length; i++){
+//   var thing = $('input:checked')[i];
+//   console.log($(thing).val());
+// }

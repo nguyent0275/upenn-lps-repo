@@ -8,7 +8,13 @@ function getApi(requestUrl) {
       // Check the console first to see the response.status
       console.log(response.status);
       // Then write the conditional based on that response.status value
+      // if / else
       // Make sure to display the response on the page
+      // create
+      // text/attr
+      // append
+
+      // text
     })
     .then(function (data) {
       console.log(data);

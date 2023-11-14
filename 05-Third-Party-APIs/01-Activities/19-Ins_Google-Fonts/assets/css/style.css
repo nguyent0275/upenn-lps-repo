@@ -1,5 +1,7 @@
 body {
-  font-family: 'Titillium Web', sans-serif;
+  /* the first font on the left is priority font*/
+  /* the fonts on the right are backups */
+  font-family: 'Comic Neue', 'Titillium Web', sans-serif;
   font-size: 16px;
 }
 

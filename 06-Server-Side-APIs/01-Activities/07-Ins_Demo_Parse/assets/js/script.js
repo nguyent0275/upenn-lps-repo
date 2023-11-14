@@ -1,9 +1,9 @@
-fetch('https://api.github.com/orgs/twitter/public_members')
+fetch('https://api.github.com/orgs/facebookresearch/repos')
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
-    console.log('Twitter Public Members: Raw data \n----------');
+    console.log('Facebook Research Repos: Raw repo data \n----------');
     console.log(data);
   });
 
